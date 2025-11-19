@@ -23,6 +23,7 @@ class MysplashScreen1 extends StatelessWidget {
               image: DecorationImage(
                 image: AssetImage
                 ("assets/images/logo1.webp"),
+                fit: BoxFit.cover,
               ),
             ),
           )
