@@ -41,10 +41,24 @@ class MysplashScreen1 extends StatelessWidget {
             'Banyak sekali farian makan an ala jepang di sini\n Heppy Shopping',
             textAlign: TextAlign.center,
             style:TextStyle(fontSize: 12, color: Colors.blueGrey),
-            
           ),
+          SizedBox(height: 20),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Container(
+                height: 10,
+                width: 10,
+                decoration: BoxDecoration(
+                  shape: BoxShape.circle,
+                  color: Colors.green,
+                ),
+              ),
         ],
       ),
+        ],
+      )
+      
     );
   }
 }
