@@ -85,33 +85,31 @@ class MysplashScreen1 extends StatelessWidget {
                 ],
               ),
             ],
-              ),
-              SizedBox(height: 20),
-              Container(
-                child: SizedBox(
-                  height: 40,
-                  width: double.infinity,
-                  child: ElevatedButton(
-                    onPressed: () {
-                      Navigator.pushAndRemoveUntil(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) => MysplashScreen2(),
-                        ),
-                        (Route<dynamic> route) => false,
-                      );
-                    },
-                    style: ElevatedButton.styleFrom(
-                      backgroundColor: Colors.blueGrey,
-                    ),
-                    child: Text(
-                      "Continue",
-                      style: TextStyle(fontSize: 16.0, color: Colors.black),
-                    ),
-                  ),
+          ),
+          SizedBox(height: 20),
+          Container(
+            child: SizedBox(
+              height: 40,
+              width: double.infinity,
+              child: ElevatedButton(
+                onPressed: () {
+                  Navigator.pushAndRemoveUntil(
+                    context,
+                    MaterialPageRoute(builder: (context) => MysplashScreen2()),
+                    (Route<dynamic> route) => false,
+                  );
+                },
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.blueGrey,
+                ),
+                child: Text(
+                  "Continue",
+                  style: TextStyle(fontSize: 16.0, color: Colors.black),
                 ),
               ),
-              SizedBox(height: 70),
+            ),
+          ),
+          SizedBox(height: 70),
         ],
       ),
     );

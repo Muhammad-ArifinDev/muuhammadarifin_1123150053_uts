@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:muhammadarifin_1123150053_uts/login.dart';
-import 'package:muhammadarifin_1123150053_uts/splash_screen2.dart';
 
 class MysplashScreen3 extends StatelessWidget {
   const MysplashScreen3({super.key});
@@ -23,7 +22,7 @@ class MysplashScreen3 extends StatelessWidget {
               shape: BoxShape.circle,
               color: Colors.blueGrey,
               image: DecorationImage(
-                image: AssetImage("assets/images/logo1.webp"),
+                image: AssetImage("assets/images/logo3.webp"),
                 fit: BoxFit.cover,
               ),
             ),
@@ -52,7 +51,7 @@ class MysplashScreen3 extends StatelessWidget {
                 width: 10,
                 decoration: BoxDecoration(
                   shape: BoxShape.circle,
-                  color: Colors.green,
+                  color: Colors.green[100],
                 ),
               ),
               SizedBox(height: 20),
@@ -80,39 +79,37 @@ class MysplashScreen3 extends StatelessWidget {
                     width: 10,
                     decoration: BoxDecoration(
                       shape: BoxShape.circle,
-                      color: Colors.green[100],
+                      color: Colors.green,
                     ),
                   ),
                 ],
               ),
             ],
-              ),
-              SizedBox(height: 20),
-              Container(
-                child: SizedBox(
-                  height: 40,
-                  width: double.infinity,
-                  child: ElevatedButton(
-                    onPressed: () {
-                      Navigator.pushAndRemoveUntil(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) => MyLogin(),
-                        ),
-                        (Route<dynamic> route) => false,
-                      );
-                    },
-                    style: ElevatedButton.styleFrom(
-                      backgroundColor: Colors.blueGrey,
-                    ),
-                    child: Text(
-                      "Continue",
-                      style: TextStyle(fontSize: 16.0, color: Colors.black),
-                    ),
-                  ),
+          ),
+          SizedBox(height: 20),
+          Container(
+            child: SizedBox(
+              height: 40,
+              width: double.infinity,
+              child: ElevatedButton(
+                onPressed: () {
+                  Navigator.pushAndRemoveUntil(
+                    context,
+                    MaterialPageRoute(builder: (context) => MyLogin()),
+                    (Route<dynamic> route) => false,
+                  );
+                },
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.blueGrey,
+                ),
+                child: Text(
+                  "Continue",
+                  style: TextStyle(fontSize: 16.0, color: Colors.black),
                 ),
               ),
-              SizedBox(height: 70),
+            ),
+          ),
+          SizedBox(height: 70),
         ],
       ),
     );

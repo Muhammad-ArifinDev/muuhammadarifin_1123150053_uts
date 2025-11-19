@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:muhammadarifin_1123150053_uts/splash_screen2.dart';
+import 'package:muhammadarifin_1123150053_uts/splash_screen3.dart';
 
 class MysplashScreen2 extends StatelessWidget {
   const MysplashScreen2({super.key});
@@ -22,7 +22,7 @@ class MysplashScreen2 extends StatelessWidget {
               shape: BoxShape.circle,
               color: Colors.blueGrey,
               image: DecorationImage(
-                image: AssetImage("assets/images/logo1.webp"),
+                image: AssetImage("assets/images/logo2.webp"),
                 fit: BoxFit.cover,
               ),
             ),
@@ -51,7 +51,7 @@ class MysplashScreen2 extends StatelessWidget {
                 width: 10,
                 decoration: BoxDecoration(
                   shape: BoxShape.circle,
-                  color: Colors.green,
+                  color: Colors.green[100],
                 ),
               ),
               SizedBox(height: 20),
@@ -64,7 +64,7 @@ class MysplashScreen2 extends StatelessWidget {
                     width: 10,
                     decoration: BoxDecoration(
                       shape: BoxShape.circle,
-                      color: Colors.green[100],
+                      color: Colors.green,
                     ),
                   ),
                 ],
@@ -85,33 +85,31 @@ class MysplashScreen2 extends StatelessWidget {
                 ],
               ),
             ],
-              ),
-              SizedBox(height: 20),
-              Container(
-                child: SizedBox(
-                  height: 40,
-                  width: double.infinity,
-                  child: ElevatedButton(
-                    onPressed: () {
-                      Navigator.pushAndRemoveUntil(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) => MysplashScreen2(),
-                        ),
-                        (Route<dynamic> route) => false,
-                      );
-                    },
-                    style: ElevatedButton.styleFrom(
-                      backgroundColor: Colors.blueGrey,
-                    ),
-                    child: Text(
-                      "Continue",
-                      style: TextStyle(fontSize: 16.0, color: Colors.black),
-                    ),
-                  ),
+          ),
+          SizedBox(height: 20),
+          Container(
+            child: SizedBox(
+              height: 40,
+              width: double.infinity,
+              child: ElevatedButton(
+                onPressed: () {
+                  Navigator.pushAndRemoveUntil(
+                    context,
+                    MaterialPageRoute(builder: (context) => MysplashScreen3()),
+                    (Route<dynamic> route) => false,
+                  );
+                },
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.blueGrey,
+                ),
+                child: Text(
+                  "Continue",
+                  style: TextStyle(fontSize: 16.0, color: Colors.black),
                 ),
               ),
-              SizedBox(height: 70),
+            ),
+          ),
+          SizedBox(height: 70),
         ],
       ),
     );
