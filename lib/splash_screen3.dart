@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:muhammadarifin_1123150053_uts/login.dart';
 import 'package:muhammadarifin_1123150053_uts/splash_screen2.dart';
 
-class MysplashScreen1 extends StatelessWidget {
-  const MysplashScreen1({super.key});
+class MysplashScreen3 extends StatelessWidget {
+  const MysplashScreen3({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -96,7 +97,7 @@ class MysplashScreen1 extends StatelessWidget {
                       Navigator.pushAndRemoveUntil(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => MysplashScreen2(),
+                          builder: (context) => MyLogin(),
                         ),
                         (Route<dynamic> route) => false,
                       );
