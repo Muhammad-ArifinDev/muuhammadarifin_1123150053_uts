@@ -9,6 +9,7 @@ class MyLogin extends StatelessWidget {
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
+          Spacer(),
           SizedBox(height: 20),
           Text(
             'Welcome back Ramen IciBos',
@@ -20,8 +21,8 @@ class MyLogin extends StatelessWidget {
           ),
           SizedBox(height: 20),
           Container(
-            height: 240,
-            width: double.infinity,
+            height: 120,
+            width: 120,
             decoration: BoxDecoration(
               shape: BoxShape.circle,
               color: Colors.blueGrey,
@@ -118,6 +119,7 @@ class MyLogin extends StatelessWidget {
               padding: EdgeInsets.symmetric(vertical: 20.0, horizontal: 130.0),
             ),
           ),
+          SizedBox(height: 30),
         ],
       ),
     );
