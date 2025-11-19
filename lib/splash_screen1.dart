@@ -36,10 +36,11 @@ class MysplashScreen1 extends StatelessWidget {
               fontWeight: FontWeight.bold,
             ),
           ),
+          SizedBox(height: 20),
           Text(
-            'Banyak sekali farian makan an ala jepang di sini \n Heppy Shopping',
+            'Banyak sekali farian makan an ala jepang di sini\n Heppy Shopping',
             textAlign: TextAlign.center,
-            style:TextStyle(fontSize: 25, color: Colors.blueGrey),
+            style:TextStyle(fontSize: 12, color: Colors.blueGrey),
             
           ),
         ],
