@@ -91,6 +91,17 @@ class MyLogin extends StatelessWidget {
               child: Text("Login", style: TextStyle(color: Colors.white)),
             ),
           ),
+          SizedBox(height: 20),
+          Row(
+            children: [
+              Expanded(child: Divider(thickness: 1)),
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 8.0),
+                child: Text("OR"),
+              ),
+              Expanded(child: Divider(thickness: 1)),
+            ],
+          ),
         ],
       ),
     );
