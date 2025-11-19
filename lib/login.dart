@@ -105,7 +105,7 @@ class MyLogin extends StatelessWidget {
           SizedBox(height: 20),
           OutlinedButton.icon(
             onPressed: () {},
-            icon: Icon(Icons.g_mobiledata, color: Colors.blue),
+            icon: Icon(Icons.g_mobiledata, color: Colors.blueGrey),
             label: Text(
               "Login with Google",
               style: TextStyle(color: Colors.blueGrey),
