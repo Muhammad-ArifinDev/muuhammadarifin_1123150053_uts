@@ -52,6 +52,20 @@ class MyLogin extends StatelessWidget {
               hintText: 'Masukkan Email Anda',
             ),
           ),
+          SizedBox(height: 20),
+          TextField(
+            keyboardType: TextInputType.visiblePassword,
+            obscureText: true,
+            decoration: InputDecoration(
+              border: OutlineInputBorder(),
+              focusedBorder: OutlineInputBorder(
+                borderSide: BorderSide(color: Colors.blue),
+              ),
+              prefixIcon: Icon(Icons.lock),
+              labelText: 'Password',
+              hintText: 'Masukkan Password Anda',
+            ),
+          ),
         ],
       ),
     );
