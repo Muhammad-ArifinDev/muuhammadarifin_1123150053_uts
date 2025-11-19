@@ -64,6 +64,10 @@ class MyLogin extends StatelessWidget {
               prefixIcon: Icon(Icons.lock),
               labelText: 'Password',
               hintText: 'Masukkan Password Anda',
+              suffixIcon: IconButton(
+                icon: Icon(Icons.visibility),
+                onPressed: () {},
+              ),
             ),
           ),
         ],
