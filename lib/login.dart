@@ -60,7 +60,7 @@ class MyLogin extends StatelessWidget {
             decoration: InputDecoration(
               border: OutlineInputBorder(),
               focusedBorder: OutlineInputBorder(
-                borderSide: BorderSide(color: Colors.blue),
+                borderSide: BorderSide(color: Colors.blueGrey),
               ),
               prefixIcon: Icon(Icons.lock),
               labelText: 'Password',
@@ -78,7 +78,7 @@ class MyLogin extends StatelessWidget {
               onPressed: () {},
               child: Text(
                 "Forgot Password?",
-                style: TextStyle(color: Colors.blue),
+                style: TextStyle(color: Colors.blueGrey),
               ),
             ),
           ),
