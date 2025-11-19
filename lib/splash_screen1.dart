@@ -5,6 +5,17 @@ class MysplashScreen1 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          SizedBox(height: 20),
+          Text(
+            'Muhammad Arifin',
+            style: TextStyle(fontSize: 10, color: Colors.blueGrey),
+          )
+        ],
+      ),
+    );
   }
 }
