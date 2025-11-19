@@ -10,6 +10,7 @@ class MysplashScreen3 extends StatelessWidget {
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
+          Spacer(),
           SizedBox(height: 20),
           Text(
             'Muhammad Arifin',
