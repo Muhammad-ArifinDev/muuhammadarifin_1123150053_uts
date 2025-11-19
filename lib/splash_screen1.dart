@@ -26,7 +26,22 @@ class MysplashScreen1 extends StatelessWidget {
                 fit: BoxFit.cover,
               ),
             ),
-          )
+          ),
+          SizedBox(height: 20),
+          Text(
+            'Hallo selamat datang di iciramen & cake icibos',
+            style: TextStyle(
+              fontSize: 16,
+              color: Colors.blueGrey,
+              fontWeight: FontWeight.bold,
+            ),
+          ),
+          Text(
+            'Banyak sekali farian makan an ala jepang di sini \n Heppy Shopping',
+            textAlign: TextAlign.center,
+            style:TextStyle(fontSize: 25, color: Colors.blueGrey),
+            
+          ),
         ],
       ),
     );
