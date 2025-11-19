@@ -13,6 +13,14 @@ class MysplashScreen1 extends StatelessWidget {
           Text(
             'Muhammad Arifin',
             style: TextStyle(fontSize: 10, color: Colors.blueGrey),
+          ),
+          Container(
+            height: 240,
+            width: 240,
+            decoration: BoxDecoration(
+              shape: BoxShape.circle,
+              color: Colors.blueGrey,
+            ),
           )
         ],
       ),
