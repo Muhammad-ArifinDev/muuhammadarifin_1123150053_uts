@@ -27,15 +27,31 @@ class MyLogin extends StatelessWidget {
               color: Colors.blueGrey,
               image: DecorationImage(
                 image: AssetImage("assets/images/logo4.jpg"),
-              )
+              ),
             ),
           ),
           SizedBox(height: 20),
           Text(
             "Silahkan login untuk melanjutkan...!",
-            style: TextStyle(fontSize: 16, color: Colors.blueGrey, fontWeight: FontWeight.bold),
+            style: TextStyle(
+              fontSize: 16,
+              color: Colors.blueGrey,
+              fontWeight: FontWeight.bold,
+            ),
           ),
-
+          SizedBox(height: 20),
+          TextField(
+            keyboardType: TextInputType.emailAddress,
+            decoration: InputDecoration(
+              border: OutlineInputBorder(),
+              focusedBorder: OutlineInputBorder(
+                borderSide: BorderSide(color: Colors.blueGrey),
+              ),
+              prefixIcon: Icon(Icons.email),
+              labelText: 'Email',
+              hintText: 'Masukkan Email Anda',
+            ),
+          ),
         ],
       ),
     );
