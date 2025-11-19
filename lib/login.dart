@@ -70,6 +70,17 @@ class MyLogin extends StatelessWidget {
               ),
             ),
           ),
+          SizedBox(height: 20),
+           Align(
+            alignment: Alignment.centerRight,
+            child: TextButton(
+              onPressed: () {},
+              child: Text(
+                "Forgot Password?",
+                style: TextStyle(color: Colors.blue),
+              ),
+            ),
+          ),
         ],
       ),
     );
